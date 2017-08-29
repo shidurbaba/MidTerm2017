@@ -1,0 +1,92 @@
+Please answer the below core-java Questions:
+
+
+What jdk contains or composed of and define each components?
+    Java Development Kit. Comosed of JRE, compiler and debugger.
+    	JRE - Java Runtime Environment
+    	Compiler - translates surce code into byte code.
+    	Debugger - provides inspection and debuugging
+What is IDE?
+    Integrated Development Environment
+What are the IDEs available in the market to support java?
+    Eclipse, IntelliJ,Netbeans
+Explain the entire java life cycle.
+    Java program will be written and then complied by a Java Complier. From There it will turn it into a class, which  then goes through an interpreter. This translaes the java code into binary machine code. This is then outputted to the computer.
+what is class?
+    A blueprint for creating objects.
+What is object?
+    An entity that has state behaviour.
+What is the entry point of an application?
+    To run the main method
+Why main is static?
+    Called by a JVM before any objects are made. This makes it accessible for other classes.
+What is the difference between an Interface and Abstract class?
+    You can only declare methods in an Interface whereas you can implement non-abstract methods and declare abstract methods in abstract class.
+Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+    No, you cannot make an object from an interface and abstract class.
+what is Access Specifier?
+    The access to classes, constructors, methods and fields are regulated using access modifiers i.e. a class can control what information or data can be accessible by other classes. ... A member has package or default accessibility when no accessibility modifier is specified.
+What is OOP ? Define each feature of java OOP.
+What is API? Name list of API that you have used so far.
+    Application program interface (API) is a set of routines, protocols, and tools for building software applications. An API specifies how software components should interact. Additionally, APIs are used when programming graphical user interface (GUI) components. String API, Integer API.
+Does java support multiple inheritance?
+    No, Java doesnot support multiple inheritance.
+What is method overloading and when it happens?
+    Method Overloading is a feature that allows a class to have two or more methods having same name, if their argument lists are different.
+Explain exceptions in java and how to handle it.
+    An exception (or exceptional event) is a problem that arises during the execution of a program. When an Exception occurs the normal flow of the program is disrupted and the program/Application terminates abnormally, which is not recommended, therefore, these exceptions are to be handled. We try and catch block to handle exceptions.
+What is static keyword in java? How it has been used in variables and methods ?
+    The static keyword in java is used for memory management mainly. We can apply java static keyword with variables, methods, blocks and nested class.The static variable can be used to refer the common property of all objects (that is not unique for each object) e.g. company name of employees,college name of students etc.The static variable gets memory only once in class area at the time of class loading.
+What is final and how it has been used variables and methods?
+    In Java we use final keyword with variables to specify its values are not to be changed.
+What is final, finally and finalize?
+    Final class can't be inherited, final method can't be overridden and final variable value can't be changed. Finally is used to place important code, it will be executed whether exception is handled or not. Finalize is used to perform clean up processing just before object is garbage collected.
+What is a constructor ?
+    Final class can't be inherited, final method can't be overridden and final variable value can't be changed. Finally is used to place important code, it will be executed whether exception is handled or not. Finalize is used to perform clean up processing just before object is garbage collected.
+What is "this" keyword in java ?
+    Keyword 'THIS' in Java is a reference variable that refers to the current object. It can be used to refer current class instance variable. It can be used to invoke or initiate current class constructor. It can be passed as an argument in the method call
+What is "super" keyword in java?
+    It is used inside a sub-class method definition to call a method defined in the super class. Private methods of the super-class cannot be called. Only public and protected methods can be called by the super keyword. It is also used by class constructors to invoke constructors of its parent class.
+What is JVM stand for ?
+    Java Virtual Machine
+What version of java are you using?
+    Java version 8
+What is JAR stand for ?
+    A JAR (Java ARchive) is a package file format typically used to aggregate many Java class files and associated metadata and resources (text, images, etc.) into one file for distribution
+What is compile time and run time?
+    The source code must be compiled into machine code in order to become and executable program. This compilation process is referred to as compile time. A compiled program can be opened and run by a user. When an application is running, it is called runtime.
+What is heap?
+    The heap is the runtime data area from which memory for all class instances and arrays is allocated. The heap is created on virtual machine start-up. Heap storage for objects is reclaimed by an automatic storage management system (known as a garbage collector); objects are never explicitly deallocated.
+How java manage it's memory?
+    The Heap and the Nursery. Java objects reside in an area called the heap. During the garbage collection objects that are no longer used are cleared, thus making space for new objects.
+What is the difference between String, StringBuffer and StringBuilder?
+    String is immutable, if you try to alter their values, another object gets created, whereas StringBuffer and StringBuilder are mutable so they can change their values. Thread-Safety Difference: The difference between StringBuffer and StringBuilder is that StringBuffer is thread-safe.
+What is Singleton class?
+    Singleton Class in Java. In object-oriented programming, a singleton class is a class that can have only one object (an instance of the class) at a time. ... To design a singleton class: Make constructor as private. Write a static method that has return type object of this singleton class.
+
+What is Serialization and Deserialization?
+    Serialization and Deserialization in Java. Serialization is a process of converting an object into a sequence of bytes which can be persisted to a disk or database or can be sent through streams. The reverse process of creating object from sequence of bytes is called deserialization.
+Which one will take more memory, an int or Integer?
+    An instants variable will take in more memory than a reference variable.
+
+Why is String Immutable in Java?
+     An immutable class is simply a class whose instances cannot be modified. All information in an instance is initialized when the instance is created and the information can not be modified. There are many advantages of immutable classes. This article summarizes why String is designed to be immutable. This post illustrate the immutability concept in the perspective of memory, synchronization and data structures.
+
+What is constructor chaining in Java?
+    Calling one constructor from other is called Constructor chaining in Java. Constructors can call each other automatically or explicitly using this() and super() keywords. this() denotes a no-argument constructor of the same class and super() denotes a no argument or default constructor of parent class.
+
+The difference between Serial and Parallel Garbage Collector?
+    The serial collector is the simplest one, and the one you probably won?t be using, as it?s mainly designed for single-threaded environments (e.g. 32 bit or Windows) and for small heaps. This collector freezes all application threads whenever it?s working, which disqualifies it for all intents and purposes from being used in a server environment.
+    The parallel collector is the default garbage collectors. It uses multiple threads to scan through and compact the heap. The downside to the parallel collector is that it will stop application threads when performing either a minor or full GC collection. The parallel collector is best suited for apps that can tolerate application pauses and are trying to optimize for lower CPU overhead caused by the collector.
+What is JIT stands for?
+    JIT stands for Just In Time.
+Explain Java Heap space and Garbage collection?
+    Garbage collection (GC) is the process that aims to free up occupied memory that is no longer referenced by any reachable Java object, and is an essential part of the Java virtual machine's (JVM's) dynamic memory management system.
+    The JVM has a heap that is the runtime data area from which memory for all class instances and arrays are allocated. It is created at the JVM start-up. The heap size may be configured with the following VM options: -Xmx<size> - to set the maximum Java heap size.
+Can you guarantee the garbage collection process?
+    There are methods like System.gc() and Runtime.gc() which is used to send request of Garbage collection to JVM but it?s not guaranteed that garbage collection will happen.
+What is the difference between stack and heap in Java?
+     The main difference between heap and stack is that stack memory is used to store local variables and function call while heap memory is used to store objects in Java
+
+
+

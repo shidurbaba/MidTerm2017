@@ -1,0 +1,114 @@
+Please answer the below Data Structure Questions:
+
+Why do we need data structure?
+    Data Strucutres are used in computing to make it easy to locate and retrieve information. Primitive data strucutures are simple ways for programming languages to represent basic values. These includes data types like integers, char, Boolean, pointer,and the like. Non-primitive data structures provides ways of storing multiple values in a single variable. These includes arrays, lists, stacks, tress, and so forth. Data Structures can also be used to group and organize other data structures. In databases, a record can be though of as a data strucutures that contains all the data structures related to a give key; in object oriented programming languages like Java, a class is data structure tha orgranizes attributes and functions in such a way that they can be easily replicated. In each case, the way the data is structures makes it easy to retrieve or manipulate.
+What are the various operations that can be performed on different Data Structures?
+    1. Traversing- It is used to access each data item exactly once so that it can be processed.
+    2. Searching- It is used to find out the location of the data item if it exists in the given collection of data items.
+    3. Inserting- It is used to add a new data item in the given collection of data items.
+    4. Deleting- It is used to delete an existing data item from the given collection of data items.
+    5. Sorting- It is used to arrange the data items in some order i.e. in ascending or descending order in case of numerical data and in dictionary order in case of alphanumeric data.
+    6. Merging- It is used to combine the data items of two sorted files into single file in the sorted form.
+List out the areas in which data structures are applied extensively?
+     Compiler Design, Operating System, Database Management System,
+what is an Array?
+    An array is a data structure that contains a group of elements. Typically these elements are all of the same data type, such as an integer or string. Arrays are commonly used in computer programs to organize data so that a related set of values can be easily sorted or searched
+
+what is the difference between the Array and ArrayList?
+    1. Resizable :   Array is static in size that is fixed length data structure, One can not change the length after creating the Array object.
+    ArrayList is dynamic in size . Each ArrayList object  has instance variable capacity which indicates the size of the ArrayList. As elements are added to an ArrayList its capacity grows automatically.
+    2. Performance : Performance of Array and ArrayList depends on the operation you are performing :
+    resize() opertation : Automatic resize of ArrayList will slow down the performance as it will use temporary array to copy elements from the old array to new array.
+    ArrayList is internally backed by Array during resizing  as it calls the native implemented method System.arrayCopy(src,srcPos,dest,destPos,length) .
+    add() or get() operation : adding an element or retrieving an element from the array or arraylist object has almost same  performance , as for ArrayList object these operations  run in constant time.
+    3. Primitives :  ArrayList can not contains primitive data types (like int , float , double) it can only contains Object while Array can contain both primitive data types as well as objects.
+    4. Iterating the values : We can use iterator  to iterate through ArrayList . The iterators returned by the ArrayList class's iterator and listiterator method are fail-fast.  We can use for loop or for each loop to iterate through array .
+    5. Type-Safety :  In Java , one can ensure Type Safety through Generics. while Array is a homogeneous data structure , thus it will contain objects of specific class or primitives of specific  data type. In array if one try to store the different data type other than the specified while creating the array object , ArrayStoreException is thrown.
+    6. Length :  Length of the ArrayList is provided by the size() method while Each array object has the length variable which returns the length of the array.
+    7. Adding elements : We can insert elements into the arraylist object using the add() method while  in array we insert elements using the assignment operator.
+    8. Multi-dimensional :  Array can be multi dimensional , while ArrayList is always single dimensional.
+What is LinkedList?
+    A linked list is an ordered, linear structure, similar to an array. Instead of items being placed at indices, however, they are connected through a chain of references, with each item containing a reference to the next item. There are benefits to using a linked list over an array, and benefits for using an array over a linked list. The two differ in the amount of memory they use and the speed of various tasks related to accessing, adding, and removing data.
+
+How is an Array different from Linked List?
+    In array, each element is independent, no connection with previous element or with its location. In Linked list, location or address of elements is stored in the link part of previous element/node. In array, no pointers are used like linked list so no need of extra space in memory for pointer.
+What is queue?
+    A queue is a container of objects (a linear collection) that are inserted and removed according to the first-in first-out (FIFO) principle. An excellent example of a queue is a line of students in the food court of the UC. New additions to a line made to the back of the queue, while removal (or serving) happens in the front. In the queue only two operations are allowed enqueue and dequeue. Enqueue means to insert an item into the back of the queue, dequeue means removing the front item. The picture demonstrates the FIFO access.
+What is stack?
+    A stack is a container of objects that are inserted and removed according to the last-in first-out (LIFO) principle. In the pushdown stacks only two operations are allowed: push the item into the stack, and pop the item out of the stack. A stack is a limited access data structure - elements can be added and removed from the stack only at the top. push adds an item to the top of the stack, pop removes the item from the top. A helpful analogy is to think of a stack of books; you can remove only the top book, also you can add a new book on the top.
+What is FIFO and LIFO?
+    FIFO - First in First Out
+    	LIFO - Last In First Out
+
+What is the order of complexity?
+This means that it is a certain mathematical expression of the size of the input, and the algorithm finishes between two factors of it. Generally, the smaller the order of complexity of the program's underlying algorithm, the faster it will run and the better it will scale as the input gets larger.
+
+What is the best case to search an element from an array?
+    When the element you are searching for is the middle element of the list/array because in that case you will get the desired result in a single go.
+What is the worst case to search an element from an array?
+    The worst case arises when the element is at last position or not in the array, therefore we have to traverse the whole array giving n no. of repetitions over loop.
+What is tree in data structure?
+    In computer science, a tree is a widely used abstract data type (ADT)?or data structure implementing this ADT?that simulates a hierarchical tree structure, with a root value and subtrees of children with a parent node, represented as a set of linked nodes.
+
+what is graph in data structure?
+    A graph is a pictorial representation of a set of objects where some pairs of objects are connected by links. The interconnected objects are represented by points termed as vertices, and the links that connect the vertices are called edges.
+what is the difference between the HashTable and HashMap?
+    HashMap:
+    		1. HashMap is non synchronized. It is not thread safe and can't be shared between many threads without proper synchronized code.
+    		2.HashMap allows one null key and multiple null values.
+    		3.HashMap is a new class introduced in JDK 1.2.
+    		4.HashMap is fast.
+    		5.We can make the HashMap as synchronized by calling this 				code
+    				Map m = Collections.synchronizedMap(hashMap);
+    		6. HashMap is traversed by Iterator.
+    		7. Iterator in HashMap is fail-fast.
+    		8. HashMap inherits AbstractMap class.
+    	Hashtable
+    		1. Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+    		2.Hashtable doesn't allow any null key or value.
+    		3.Hashtable is a legacy class.
+    		4.Hashtable is slow.
+    		5.Hashtable is internally synchronized and can't be 			unsynchronized.
+    		6.Hashtable is traversed by Enumerator and Iterator.
+    		7.Enumerator in Hashtable is not fail-fast.
+    		8.Hashtable inherits Dictionary class.
+
+What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+    RDBMS ? Array (i.e. Array of structures)
+    	Network data model ? Graph
+    	Hierarchical data model ? Trees
+
+How HashMap works in java?
+    Java HashMap class implements the map interface by using a hashtable. It inherits AbstractMap class and implements Map interface. The important points about Java HashMap class are:
+    	1. A HashMap contains values based on the key.
+    	2. It contains only unique elements.
+    	3. It may have one null key and multiple null values.
+    	4. It maintain no order.
+What is ArrayIndexOutOfBoundsException in java? When it occurs?
+    Thrown to indicate that an array has been accessed with an illegal index. The index is either negative or greater than or equal to the size of the array.
+What are the different ways of copying an array into another array?
+    int[] a = {1,2,3,4,5};
+    	int[] b = Arrays.copyOf(a, a.length);
+What is difference between an array and a linked list?
+    In array, each element is independent, no connection with previous element or with its location. In Linked list, location or address of elements is stored in the link part of previous element/node. In array, no pointers are used like linked list so no need of extra space in memory for pointer.
+What is DFS and BFS?
+    The breadth first search (BFS) and the depth first search (DFS) are the two algorithms used for traversing and searching a node in a graph. They can also be used to find out whether a node is reachable from a given node or not.
+What is Recursion?
+    A method of solving problems that involves breaking a problem down into smaller and smaller subproblems until you get to a small enough problem that it can be solved trivially. Usually recursion involves a function calling itself. While it may not seem like much on the surface, recursion allows us to write elegant solutions to problems that may otherwise be very difficult to program.
+What are linear and non linear data Structures?
+    Linear Data Structure: Those data structures where the data elements are organised in some sequence is called linear data structure. ... Examples of linear data structures are array, stacks, queue, and linked list. They can be implemented in memory using two ways.
+What is Big-(O)-notation?
+    Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
+Outlined different kind of sorting algorithm with time complexity?
+    Quicksort
+    Mergesort
+    Heapsort
+    InsertioSort
+    Selectionsort
+
+Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
+  a)In terms of Accessing element.
+  b)In terms of Inserting element.
+  c)In terms of Searching element.
+  d)In terms of Removing element.
+
